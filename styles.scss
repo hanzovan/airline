@@ -17,4 +17,5 @@ h1 {
 li {
     color: $normal-color;
     @extend %normal-font;
+    margin-bottom: 10px;
 }
