@@ -1,0 +1,20 @@
+$normal-color: blue;
+$big-font-color: brown;
+%normal-font {
+    font-family: sans-serif;
+    font-size: 24;
+    font-style: italic;
+}
+%big-font {
+    font-family: arial;
+    font-size: 36px;
+    font-style: bold;
+}
+h1 {
+    color: $big-font-color;
+    @extend %big-font;
+}
+li {
+    color: $normal-color;
+    @extend %normal-font;
+}
