@@ -1,0 +1,87 @@
+li {
+  font-family: sans-serif;
+  font-size: 24;
+  font-style: italic; }
+
+h1 {
+  font-family: arial;
+  font-size: 36px;
+  font-style: bold; }
+
+h1 {
+  color: brown; }
+
+li {
+  color: blue;
+  margin-bottom: 10px; }
+
+.whole-page-form {
+  margin-left: 350px;
+  margin-top: 100px; }
+
+.input-line {
+  clear: both;
+  vertical-align: baseline;
+  padding-bottom: 30px;
+  padding-top: 30px; }
+
+.input-left {
+  float: left;
+  display: inline-block;
+  min-width: 0;
+  /* enable vertical stack for all 2 input bars */
+  width: 16%;
+  height: 42px;
+  line-height: 15px;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: bold; }
+
+.input {
+  float: left;
+  display: block;
+  min-width: 167px;
+  min-height: 41px;
+  height: 5px;
+  width: 250px;
+  /* to push right content to the right of the input bar */
+  margin-right: 100px;
+  border: 1px solid grey;
+  border-radius: 20px;
+  font-size: 16px;
+  /* to let the text inside the input bar away from the border a little bit */
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.normal-btn {
+  margin-top: 100px;
+  margin-left: 230px; }
+
+#login-btn {
+  background-color: #a9a9a9;
+  color: white;
+  font-weight: bold;
+  font-family: arial, sans-serif;
+  position: center;
+  width: 120px;
+  height: 40px;
+  border-color: transparent;
+  overflow: hidden;
+  font-size: 18px;
+  /* create corners */
+  /* clip-path: polygon(
+  0 30%,
+  15% 0,
+  85% 0,
+  100% 30%,
+  100% 70%,
+  85% 100%,
+  15% 100%,
+  0% 70%,
+  0% 10%
+  ) */ }
+
+#login-btn:hover {
+  background-color: #878787; }
+
+/*# sourceMappingURL=styles.css.map */
