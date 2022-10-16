@@ -1,4 +1,4 @@
-$normal-color: blue;
+$normal-color: orange;
 $big-font-color: brown;
 %normal-font {
     font-family: sans-serif;
@@ -32,7 +32,7 @@ li {
 }
 .input-left {
     float: left;
-    display: inline-block;
+    // display: inline-block;
     min-width: 0;
 
     /* enable vertical stack for all 2 input bars */

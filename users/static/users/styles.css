@@ -12,7 +12,7 @@ h1 {
   color: brown; }
 
 li {
-  color: blue;
+  color: orange;
   margin-bottom: 10px; }
 
 .whole-page-form {
@@ -27,7 +27,6 @@ li {
 
 .input-left {
   float: left;
-  display: inline-block;
   min-width: 0;
   /* enable vertical stack for all 2 input bars */
   width: 16%;
