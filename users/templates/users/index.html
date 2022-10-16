@@ -1,0 +1,16 @@
+{% extends "users/layout.html" %}
+{% block title %}
+
+    index
+
+{% endblock %}
+{% block main %}
+
+    Hello, {{ request.user.first_name }}
+    <ul>
+        <li>Username: {{ request.user.username }}</li>
+        <li>Email: {{ request.user.email }}</li>
+    </ul>
+    <a href="{% url 'users:logout' %}">Log out</a>
+
+{% endblock %}

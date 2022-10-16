@@ -1,0 +1,30 @@
+{% extends "users/layout.html" %}
+{% block title %}
+
+    log in
+
+{% endblock %}
+{% block main %}
+
+    <div class="whole-page-form">
+        <form action="{% url 'users:login' %}" method="post">
+            {% csrf_token %}
+            <div class="input-line">
+                <div class="input-left">
+                    <p>Username</p>
+                </div>
+                <input class="input" name="username" type="text" autocomplete="off">
+            </div>
+            <div class="input-line">
+                <div class="input-left">
+                    <p>Password</p>
+                </div>
+                <input name="password" type="password" autocomplete="off">
+            </div>
+            <div class="normal-btn">
+                <button>Log in</button>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}
