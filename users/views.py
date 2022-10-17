@@ -2,18 +2,19 @@ from django.shortcuts import render
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect
 from django.urls import reverse
+from django.contrib.auth.decorators import login_required
+from helpers import days_between
+from datetime import datetime, timedelta, date
 
 # Create your views here.
+@login_required
 def index(request):
 
-    # If user did not logged in, redirect to login page
-    if not request.user.is_authenticated:
-        
-        return HttpResponseRedirect(reverse("users:login"))
-
-    else:
-
-        return render(request, "users/index.html")
+    today = str(date.today())
+    the_day = "2023-02-13"
+    return render(request, "users/index.html", {
+        "days": days_between(today, the_day)
+    })
 
 
 # Let user login
